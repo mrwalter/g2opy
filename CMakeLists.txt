@@ -171,7 +171,7 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
   OPTION (BUILD_WITH_MARCH_NATIVE "Build with \"-march native\"" ON)
   MESSAGE(STATUS "Compiling with GCC")
   
-  MESSAGE(STATUS "ARCH is ${ARCH}") arm64v8
+  MESSAGE(STATUS "ARCH is ${ARCH}")
   IF(NOT ("${ARCH}" MATCHES "aarch64") OR ("${ARCH}" MATCHES "arm64v8") OR ("${ARCH}" MATCHES "arm"))
     # Generic settings for optimisation
     SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -msse4.2")
